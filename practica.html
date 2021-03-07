@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Práctica</title>
+    <style>
+        h1 {
+            font-family:cursive;
+            text-align:center;
+        }
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .boton {
+            background-color: cadetblue;
+            text-align:right;
+        }
+        table {
+            border-collapse: collapse;
+            border: black 1px solid;
+        }
+        td, th {
+            font-weight:bold;
+            text-align: center;
+            border: black 1px solid;
+        }
+        .bimagen {
+            background-color:#599bb3;
+            border-radius:10px;
+            color:white;
+        }
+        .header {
+            padding: 10px;
+            text-align: right;
+            background: cadetblue;
+            color: white;
+            font-size: 10px;
+
+        }
+    </style>
+    <script>
+    function cambiarImagen()
+    {
+        document.getElementById("edificio").src="autonoma.png";
+    }
+    </script>
+</head>
+<body>
+    <img src="uaslp.png" width="100px" height="100px">
+    <img src="ingenieria.png" width="100px" height="100px" style="float:right">
+    
+    <h1>Ejercicio de Repaso</h1>
+    <h3 style="text-align:center;">Rodriguez Zavala Jose Maria Sebastian</h3>
+
+    <div class="header">
+        <button><a href="#texto">Texto</a></button>
+        <button><a href="#tabla">Tablas</a></button>
+        <button><a href="#link">Imágenes</a></button>
+    </div>
+
+    <div>
+        <a name="texto"></a>
+        <h3>Ejemplo de Texto</h3>
+        <p style="font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minus aperiam accusamus deleniti voluptate necessitatibus similique ullam obcaecati. Eligendi quo perferendis consequuntur distinctio earum perspiciatis voluptatem debitis vitae non. Vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non repellendus accusantium et adipisci eaque laboriosam, incidunt enim pariatur temporibus praesentium, tenetur, ducimus fugit facilis odit! Fuga vero tempora reiciendis! Lorel Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio necessitatibus molestias tempora! Corrupti soluta, et ratione quis iure inventore rerum magnam quos esse! Numquam necessitatibus possimus laboriosam atque quos?
+        </p>
+    </div>
+
+    <hr style="width:100%; text-align:left; margin-left:0; color:gray">
+
+    <div> 
+        <a name="tabla"></a>
+        <h3>Ejemplo de Tablas</h3>
+        <table>
+            <tr>
+                <td>Frameworks</td>
+                <td>Front End</td>
+                <td>Back End</td>
+            </tr>
+            <tr>
+                <td>Boortstrap</td>
+                <td>X</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>jQuery</td>
+                <td>X</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>NodeJS</td>
+                <td colspan="2">X</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <a name="link"></a>
+        <h3>Ejemplo de Links</h3>
+        <button class="bimagen" onclick="cambiarImagen();">Click aquí para cambiar la imagen</button>
+        <p><img id="edificio" src="edificio.jpg" ></p>
+    </div>
+</body>
+</html>
